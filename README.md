@@ -1,9 +1,9 @@
 # 微信聊天记录提取 Skill（WeChat Extraction Skill）
 
-一个面向 Codex、Claude Code、OpenClaw 等 agent 的通用技能：用于用户授权的
+一个面向 AISet、Codex、Claude Code、OpenClaw 等 agent 的通用技能：用于用户授权的
 微信 / WeChat / Weixin 聊天记录本地导出、校验、读取、整理和总结。
 
-关键词：微信聊天记录、微信导出、聊天记录提取、WeChat export、Weixin、
+关键词：微信聊天记录、微信导出、聊天记录提取、WeChat export、Weixin、AISet、
 Claude Code skill、Codex skill、OpenClaw skill、Agent skill。
 
 This repository packages a generic `SKILL.md` plus safe helper scripts and
@@ -23,30 +23,8 @@ databases, or raw chat exports.
 
 ## 安装
 
-把这个仓库 clone 到你的 agent 支持的 skill 目录里。
+AISet “专家技能”里输入：帮我安装 skill https://github.com/icodebase-cn/weixin-liaotianjilu-skill.git。
 
-Codex 本地 skill：
-
-```bash
-mkdir -p ~/.codex/skills
-git clone https://github.com/icodebase-cn/weixin-liaotianjilu-skill.git ~/.codex/skills/wechat-extraction
-```
-
-Claude Code 项目内 skill：
-
-```bash
-mkdir -p .claude/skills
-git clone https://github.com/icodebase-cn/weixin-liaotianjilu-skill.git .claude/skills/wechat-extraction
-```
-
-OpenClaw workspace skill：
-
-```bash
-mkdir -p ~/.openclaw/workspace/skills
-git clone https://github.com/icodebase-cn/weixin-liaotianjilu-skill.git ~/.openclaw/workspace/skills/wechat-extraction
-```
-
-安装后重启 agent runtime，让它重新发现 `SKILL.md`。
 
 ## 使用方式
 
